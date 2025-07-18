@@ -195,4 +195,4 @@ lets learn some important topics of machine learning, we might not cover all the
 
 <img width="250" height="84" alt="image" src="https://github.com/user-attachments/assets/bd13b63b-3709-413d-989a-b0b941f34a4b" />
 
-**Notebook** : []()
+**Notebook** : [L1_and_L2_Regularization.ipynb](L1_and_L2_Regularization.ipynb)
