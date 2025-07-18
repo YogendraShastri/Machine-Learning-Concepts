@@ -13,7 +13,8 @@ Machine Learning
 │   │   │   ├── Logistic Regression 
 │   │   │   ├── K-Nearest Neighbors (KNN) 
 │   │   │   ├── Support Vector Machine (SVM) 
-│   │   │   ├── Decision Trees 
+│   │   │   ├── Decision Trees
+│   │   │   ├── Random Forest Classcification
 │   │   │   ├── Naive Bayes 
 │
 │   ├── 1.2 Unsupervised Learning 
@@ -220,4 +221,20 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 - Anomaly Detection : SVMs are used to identify anomalies or outliers in datasets.
 
 **Notebook** : [support_vector_machine.ipynb](support_vector_machine.ipynb)
+
+### Decision Trees
+- A Decision Tree is a type of supervised learning algorithm used for both classification and regression.
+- It works like a flowchart that makes decisions by asking questions based on the input features.
+- The data is split step by step into smaller groups, and in the end, the tree gives a prediction or a final answer.
+
+<img width="422" height="286" alt="image" src="https://github.com/user-attachments/assets/ac1e1f09-092a-4ca5-8958-4aa82eec53ad" />
+
+**How it works:**
+-  Splitting the data
+-  Purity Measures
+    - Entropy
+    - Gini Index
+- Information Gain
+- Recursive Partitioning
+
 
