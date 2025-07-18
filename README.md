@@ -179,7 +179,7 @@ lets learn some important topics of machine learning, we might not cover all the
 
 [**Under Fit Vs Best Fit Vs Over Fit**](https://medium.com/greyatom/what-is-underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6803a989c76)
 
-<img width="606" height="382" alt="image" src="https://github.com/user-attachments/assets/136b26dc-d903-4b44-ab38-cd464a4ccf23" />
+<img width="706" height="582" alt="image" src="https://github.com/user-attachments/assets/136b26dc-d903-4b44-ab38-cd464a4ccf23" />
 
 #### L1 Regularization (Lasso)
 - Adds absolute values of the coefficients to the loss:
@@ -196,3 +196,28 @@ lets learn some important topics of machine learning, we might not cover all the
 <img width="250" height="84" alt="image" src="https://github.com/user-attachments/assets/bd13b63b-3709-413d-989a-b0b941f34a4b" />
 
 **Notebook** : [L1_and_L2_Regularization.ipynb](L1_and_L2_Regularization.ipynb)
+
+
+### Logistic Regression  & Naive Bayes
+[**Use this repo**](https://github.com/YogendraShastri/Must-Learn-Regressions-Before-Deep-Learning)
+
+### K-Nearest Neighbors (KNN)
+- [ will add later ]
+
+### Support Vector Machine (SVM)
+Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks, but it's mostly used for binary classification problems.
+- Find the best decision boundary (hyperplane) that separates different classes with the maximum margin.
+- Support Vectors: The closest data points to the hyperplane.
+- Margin: The distance between the hyperplane and the nearest support vectors.
+- SVM tries to maximize this margin.
+
+<img width="592" height="414" alt="image" src="https://github.com/user-attachments/assets/f09389d6-23f4-426c-af44-d283b9b1ca20" />
+
+- Some common uses and applications of the SVM :
+- Image Classification : image classification tasks, such as recognizing objects, animals, and scenes in images.
+- Handwriting Recognition :  they learn to distinguish between different handwritten characters or digits.
+- Text Classification : SVMs are used in natural language processing tasks, such as text classification (e.g., spam detection, topic categorization).
+- Anomaly Detection : SVMs are used to identify anomalies or outliers in datasets.
+
+**Notebook** : [support_vector_machine.ipynb](support_vector_machine.ipynb)
+
