@@ -237,4 +237,52 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 - Information Gain
 - Recursive Partitioning
 
+In **Decision Trees**, **Entropy** and **Gini Index** are two commonly used impurity measures that help decide which feature to split on at each step.
+
+### Entropy:
+**Entropy** is a measure of the impurity within a dataset. Imagine a dataset where all the data points belong to the same class, in this case, the dataset is considered perfectly pure, and its entropy is zero, similarly if the data points are evenly distributed across multiple classes, the dataset is highly impure, and its entropy reaches its maximum value (1 for binary classification).
+
+**Formula**:
+
+$$
+\text{Entropy}(S) = - \sum_{i=1}^{c} p_i \log_2(p_i)
+$$
+
+- Where
+- c : No of total Classes
+- pi : is the probability (or proportion) of class
+
+```bash
+If you're classifying emails into "Spam" and "Not Spam," and 40% are spam, 60% are not spam, then:
+𝑝1 =0.4 (spam),
+𝑝2 =0.6 (not spam).
+So entropy would be:
+
+Entropy =−(0.4log(0.4)+0.6log(0.6))
+```
+
+<img width="816" height="426" alt="image" src="https://github.com/user-attachments/assets/08e9552e-1862-4342-a3c9-ae355d33be46" />
+
+### Gini impurity:
+**Gini impurity** works in a similar way to entropy in decision trees. Both are used to help the tree decide where to split the data by choosing the best features. However, they are calculated differently. The Gini impurity after a split can be found using a specific formula.
+
+**Gini Index (GI)**:  
+
+$$
+GI = 1 - \sum_{i=1}^{n} p_i^2
+$$
+
+- For Binary Classification:
+
+$$
+GI = 1 - (p_{+}^2 + p_{-}^2)
+$$
+
+- A Gini Index of 0 means perfect purity (all instances belong to one class). The higher the Gini, the more impure the node.
+- Goal: Choose the feature with the lowest Gini index after the split.
+
+**Notebook** : [decision_tree.ipynb](decision_tree.ipynb)
+
+
+
 
