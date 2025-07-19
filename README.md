@@ -301,3 +301,44 @@ $$
 - **bootstrap**: Whether to use bootstrap sampling when building trees (True or False).
 
 **Notebook** : [RandomForest.ipynb](RandomForest.ipynb)
+
+### K-Nearest Neighbors (KNN)
+- **K-Nearest Neighbors (KNN)** is a supervised learning algorithm used for both classification and regression, but mostly for classification.
+- It’s based on the idea that **“similar things exist close to each other”** — meaning, data points that are similar will be near each other in feature space.
+- It works by finding the "k" closest data points (neighbors) to a given input and makes a predictions based on the majority class (for classification) or the average value (for regression).
+
+  <img width="540" height="338" alt="image" src="https://github.com/user-attachments/assets/69419268-372a-4cef-99c2-5c35ff33ee2b" />
+
+**How KNN Works:**
+1. Choose a value for K (the number of neighbors to look at).
+2. Calculate the distance between the new data point and all the existing data points (commonly using Euclidean distance).
+3. Find the K closest points (i.e., nearest neighbors).
+4. Majority Voting (for classification) and Average (for regression).
+
+**How To Choose K**
+1. Cross-Validation
+2. train_test_split
+
+**Notebook** : [knn_k_nearest_neighbour.ipynb](knn_k_nearest_neighbour.ipynb)
+
+### Cross Validation
+- Cross-validation is a technique used to check how well a machine learning model performs on unseen data.
+- It splits the data into several parts, trains the model on some parts and tests it on the remaining part repeating this process multiple times.
+- Finally the results from each validation step are averaged to produce a more accurate estimate of the model's performance.
+
+#### Types of Cross-Validation
+- Holdout Validation
+- LOOCV (Leave One Out Cross Validation)
+- Stratified Cross-Validation
+- K-Fold Cross Validation
+
+for time being lets focus on K-Ford Cross validation:
+#### K-Fold Cross Validation
+**K-Fold Cross-Validation** is a model validation technique used to evaluate how a machine learning model will perform on unseen data.
+Instead of training your model once and testing it on one fixed split of data, **K-Fold** Splits the dataset into **K** equally sized parts (folds).
+Trains the model **K** times, each time using:
+- **K – 1** folds for training
+- **1** fold for testing
+Finally, it averages the evaluation scores across all **K runs**.
+
+**Notebook** : [k_ford_class_varification.ipynb](k_ford_class_varification.ipynb)
