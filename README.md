@@ -283,6 +283,21 @@ $$
 
 **Notebook** : [decision_tree.ipynb](decision_tree.ipynb)
 
+### Random Forest Classcification
+- In Decision Tree we have seen, when we have data and we try to form tree with that. tree help us to take decisions. so lets suppose we split the data into 3 or more smaller parts and now with each small sagment of data, we try to generate a tree, and using each tree decision we try to finalize the final result by majority rule.
+- So as name suggest, here forest means collection of trees.
+- It’s like asking a group of experts (decision trees) to vote on the best answer rather than relying on just one.
 
+**[Diagram]**
+<img width="856" height="342" alt="image" src="https://github.com/user-attachments/assets/a24017a8-78a3-412d-bf09-52cb04c50dc8" />
 
+**Random Forest Classification Parameters.**
+- **n_estimators**: Number of trees in the forest.
+- **max_depth**: Maximum depth of each tree.
+- **max_features**: Number of features considered for splitting at each node.
+- **criterion**: Function used to measure split quality ('gini' or 'entropy').
+- **min_samples_split**: Minimum samples required to split a node.
+- **min_samples_leaf**: Minimum samples required to be at a leaf node.
+- **bootstrap**: Whether to use bootstrap sampling when building trees (True or False).
 
+**Notebook** : [RandomForest.ipynb](RandomForest.ipynb)
