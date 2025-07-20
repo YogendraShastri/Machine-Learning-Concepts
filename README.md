@@ -381,3 +381,31 @@ $$
 - Here is Looks like a **Elbow**, so 3 will be a good value for K.
 
 **Notebook** : [k_means_clustering.ipynb](k_means_clustering.ipynb)
+
+### Hierarchical Clustering (Unsupervised Learning):
+- Hierarchical clustering is a way to group similar data points by checking how alike they are or how similar they are.
+- The key idea is to begin with each data point as its own separate cluster and then progressively merge or split them based on their similarity.
+- Hierarchical cluster analysis helps find patterns and connections in datasets.
+
+<img width="540" height="326" alt="image" src="https://github.com/user-attachments/assets/03e0db6e-598e-4729-a2bc-0aa44e91701a" />
+
+
+#### Types of Hierarchical Clustering:
+1. Agglomerative Clustering (Bottom-Up Approach)
+2. Divisive Clustering (Top-Down Approach)
+
+#### Agglomerative Clustering (Bottom-Up Approach)
+- Starts with each data point as its own cluster
+- Then merges the most similar pairs step-by-step
+- Keeps merging until all points belong to a single cluster or until a stopping point is reached
+- This is the most common type used in practice
+
+<img width="802" height="526" alt="image" src="https://github.com/user-attachments/assets/eb8c307e-53bd-48ee-8829-9a0a55f99cdc" />
+
+####  Divisive Clustering (Top-Down Approach)
+- Starts with all data points in one big cluster
+- Then splits the cluster into smaller parts, again and again
+- Keeps splitting until each point is in its own individual cluster
+- Less commonly used than agglomerative
+
+**Notebook** : [Hierarchical_clustering_tut.ipynb](Hierarchical_clustering_tut.ipynb)
