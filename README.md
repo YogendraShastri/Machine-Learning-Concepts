@@ -342,3 +342,42 @@ Trains the model **K** times, each time using:
 Finally, it averages the evaluation scores across all **K runs**.
 
 **Notebook** : [k_ford_class_varification.ipynb](k_ford_class_varification.ipynb)
+
+### K-Means Clustering (Unsupervised Learning):
+- K-Means is an unsupervised machine learning algorithm used to group similar data points into K clusters.
+- It works by partitioning the dataset into K distinct, non-overlapping groups based on similarity (usually distance).
+
+<img width="697" height="269" alt="image" src="https://github.com/user-attachments/assets/64bffcf9-891b-4b8e-811f-914123ee185e" />
+
+### How K-Means Works ?
+1. Randomly pick K points as the initial cluster centroids.
+2. Assign each data point to the nearest centroid.
+3. Recalculate the centroid of each cluster i.e adjust the centroid with respect to data points.
+4. Repeat the process until cluster assignment dont change (Centroids converge).
+
+### How to Pick K ?
+ - To pick K there is well known method called **"Elbow method"** by which we can select the value for **K**.
+
+### How Elbow Method Works ?
+1. Run K-Means clustering on the data for different values of K (e.g., from 1 to 10).
+2.  For each K, calculate the SSE (Sum of Squared Errors) — also called inertia
+
+$$
+\text{WCSS} = \sum_{i=1}^{K} \sum_{x \in C_i} \| x - \mu_i \|^2
+$$
+
+**Where**:
+- Ci = cluster i
+- u =  centroid of cluster 𝑖
+- x = data points
+
+3. Plot K vs SSE.
+4. Look for the "elbow" point in the curve — where the SSE starts to decrease more slowly.
+
+**Elbow Method Diagram**
+
+<img width="642" height="356" alt="image" src="https://github.com/user-attachments/assets/e2d02beb-3e42-4932-8c01-591c153fd0e4" />
+
+- Here is Looks like a **Elbow**, so 3 will be a good value for K.
+
+**Notebook** : [k_means_clustering.ipynb](k_means_clustering.ipynb)
