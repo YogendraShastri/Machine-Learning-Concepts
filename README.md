@@ -409,3 +409,33 @@ $$
 - Less commonly used than agglomerative
 
 **Notebook** : [Hierarchical_clustering_tut.ipynb](Hierarchical_clustering_tut.ipynb)
+
+### Dimensionality Reduction
+- Dimensionality reduction, as the name suggests, is the process of reducing dimensions. In machine learning models, dimensions generally refer to input features. So, basically, we try to reduce the number of input features while preserving overall variance or important information.
+- By reducing the number of features, dimensionality reduction can improve model performance, reduce computation time, and enhance data visualization.
+
+  <img width="624" height="228" alt="image" src="https://github.com/user-attachments/assets/24bfbc8c-55fc-4029-9e40-cb074883567b" />
+
+#### Dimensionality reduction techniques:
+1. Feature Selection
+2. Feature Extraction
+3. Principal Component Analysis (PCA)
+4. t-distributed Stochastic Neighbor Embedding (t-SNE)
+
+#### Feature Selection and Feature Extraction
+- **Feature Selection**, This involves choosing a subset of the most relevant features from the original dataset. The idea is to keep only the features that contribute the most to the prediction or classification task.
+- Example : Correlation-based feature selection, Using feature importance scores from machine learning models (like decision trees or random forests)
+
+- **Feature Extraction**,Instead of selecting from existing features, this technique creates a new set of features by transforming the original ones.  The new features are designed to capture the most important information.
+
+#### Principle Component Analysis
+- **Principal Component Analysis (PCA)** is a dimensionality reduction technique used in data analysis and machine learning to simplify complex datasets while retaining as much information as possible.
+- It works by transforming the original variables (features) into a new set of **uncorrelated variables** called principal components.
+- Instead of keeping all the original features, PCA finds a smaller number of new axes (directions) in which the data varies the most.
+
+**Uncorrelated Variables**
+- When we say PCA creates "uncorrelated variables", we’re talking about new features (variables) that dont overlap with other information, in simple words if two features/variables given like height, and arm lenght, those two are correlated as taller people usually have longer arms.
+
+<img width="844" height="394" alt="image" src="https://github.com/user-attachments/assets/07646bc1-d2e4-4d56-aadb-da4c11cbcb28" />
+
+**Notebook** : [principle_component_analysis.ipynb](principle_component_analysis.ipynb)
