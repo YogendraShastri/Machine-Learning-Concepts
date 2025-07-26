@@ -473,3 +473,6 @@ Model Development" refers to the entire process of preparing data and building a
 - One fold is used for testing and rest k-1 folds used for training.
 - And we repeat the above process k times.
 
+<img width="844" height="592" alt="image" src="https://github.com/user-attachments/assets/c0980e4a-3723-4cf5-ae79-ae86fd018faa" />
+
+**Notebook** : [data_splitting.ipynb](data_splitting.ipynb)
