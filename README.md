@@ -459,7 +459,7 @@ Model Development" refers to the entire process of preparing data and building a
 1. Train/Test Split
 2. Cross Validation
 
-#### Train/Test Split
+### Train/Test Split
 - Divides data into two sets: one for training the model and another for testing its performance.
 - Below diagram shows how data is split into two part, one is for Training & another is for Testing.
   
@@ -467,7 +467,7 @@ Model Development" refers to the entire process of preparing data and building a
 
 **Notebook** : [data_splitting.ipynb](data_splitting.ipynb)
 
-#### Cross Validation
+### Cross Validation
 - Splits the data into multiple folds to train and test the model several times, improving generalization.
 - The dataset is divided into 'k' equally sized subsets, also known as "folds."
 - One fold is used for testing and rest k-1 folds used for training.
@@ -475,4 +475,20 @@ Model Development" refers to the entire process of preparing data and building a
 
 <img width="844" height="592" alt="image" src="https://github.com/user-attachments/assets/c0980e4a-3723-4cf5-ae79-ae86fd018faa" />
 
+```python
+from sklearn.model_selection import cross_val_score
+import numpy as np
+
+# Performs 5-fold cross-validation
+cv_scores = cross_val_score(model, X, y, cv=5)
+
+print("Cross-validation scores:", cv_scores)
+print("Mean CV Accuracy:", np.mean(cv_scores))
+
+#output
+"""
+Cross-validation scores: [0.96666667 0.96666667 0.93333333 0.93333333 1.        ]
+Mean CV Accuracy: 0.96
+"""
+```
 **Notebook** : [data_splitting.ipynb](data_splitting.ipynb)
