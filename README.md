@@ -439,3 +439,37 @@ $$
 <img width="844" height="394" alt="image" src="https://github.com/user-attachments/assets/07646bc1-d2e4-4d56-aadb-da4c11cbcb28" />
 
 **Notebook** : [principle_component_analysis.ipynb](principle_component_analysis.ipynb)
+
+## Model Development
+Model Development" refers to the entire process of preparing data and building a machine learning or deep learning model.
+
+```bash
+├── 3. Model Development
+│   ├── Data Splitting
+│   │   ├── Train/Test Split 
+│   │   ├── Cross-Validation 
+│   ├── Data Preprocessing
+│   │   ├── Scaling / Normalization 
+│   │   ├── Encoding Categorical Data 
+│   │   ├── Handling Missing Values 
+```
+
+### Data Splitting
+- Breaking the dataset into parts for training and testing (and sometimes validation), so the model can learn from one part and be evaluated on another.
+1. Train/Test Split
+2. Cross Validation
+
+#### Train/Test Split
+- Divides data into two sets: one for training the model and another for testing its performance.
+- Below diagram shows how data is split into two part, one is for Training & another is for Testing.
+  
+<img width="818" height="352" alt="image" src="https://github.com/user-attachments/assets/a37cefa9-9bb1-4925-a83d-1035da38131f" />
+
+**Notebook** : [data_splitting.ipynb](data_splitting.ipynb)
+
+#### Cross Validation
+- Splits the data into multiple folds to train and test the model several times, improving generalization.
+- The dataset is divided into 'k' equally sized subsets, also known as "folds."
+- One fold is used for testing and rest k-1 folds used for training.
+- And we repeat the above process k times.
+
